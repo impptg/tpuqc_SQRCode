@@ -27,6 +27,7 @@
 		8D1E0530212442610093EA25 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D1E052E212442610093EA25 /* MBProgressHUD.bundle */; };
 		8D1E0536212443E00093EA25 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E0535212443E00093EA25 /* MBProgressHUD.m */; };
 		A14F619B2505487A00E43041 /* ppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14F619A2505487A00E43041 /* ppViewController.m */; };
+		A193B51D250B376200055A15 /* pp_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = A193B51C250B376200055A15 /* pp_list.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		8D1E0535212443E00093EA25 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		A14F61992505487A00E43041 /* ppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ppViewController.h; sourceTree = "<group>"; };
 		A14F619A2505487A00E43041 /* ppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ppViewController.m; sourceTree = "<group>"; };
+		A193B51C250B376200055A15 /* pp_list.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = pp_list.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				18479ED01E80F92500F7F225 /* AppDelegate.h */,
 				18479ED11E80F92500F7F225 /* AppDelegate.m */,
+				A193B51C250B376200055A15 /* pp_list.plist */,
 				A14F61992505487A00E43041 /* ppViewController.h */,
 				A14F619A2505487A00E43041 /* ppViewController.m */,
 				18479F061E80F97600F7F225 /* ViewController.h */,
@@ -349,6 +352,7 @@
 			files = (
 				18479EDD1E80F92500F7F225 /* LaunchScreen.storyboard in Resources */,
 				18479EDA1E80F92500F7F225 /* Assets.xcassets in Resources */,
+				A193B51D250B376200055A15 /* pp_list.plist in Resources */,
 				8D1E0530212442610093EA25 /* MBProgressHUD.bundle in Resources */,
 				18479F1A1E80F98F00F7F225 /* SGQRCode.bundle in Resources */,
 				18479F1F1E80F9CA00F7F225 /* Main.storyboard in Resources */,

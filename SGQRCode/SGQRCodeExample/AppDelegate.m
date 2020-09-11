@@ -11,12 +11,36 @@
 @interface AppDelegate ()
 
 @end
-
+int pp_code = 1;
+NSString *pp_name;
+NSString *pp_number;
+NSString *pp_college;
+NSString *pp_leader1;
+NSString *pp_leader2;
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 加载姓名、学号、学院 、辅导员、分管领导
+//    NSString *string = [[NSBundle mainBundle] pathForResource:@"pp_list" ofType:@"plist"];
+//    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:string];
+//    pp_name = [dic objectForKey:@"pp_name"];
+//    pp_number = [dic objectForKey:@"pp_number"];
+//    pp_college = [dic objectForKey:@"pp_college"];
+//    pp_leader1 = [dic objectForKey:@"pp_leader1"];
+//    pp_leader2 = [dic objectForKey:@"pp_leader2"];
+    
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *filePath = [path stringByAppendingPathComponent:@"array.plist"];
+        NSLog(@"%@",filePath);
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    pp_name = [dic objectForKey:@"pp_name"];
+    pp_number = [dic objectForKey:@"pp_number"];
+    pp_college = [dic objectForKey:@"pp_college"];
+    pp_leader1 = [dic objectForKey:@"pp_leader1"];
+    pp_leader2 = [dic objectForKey:@"pp_leader2"];
     return YES;
 }
 
